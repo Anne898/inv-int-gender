@@ -153,10 +153,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   </head>
   <body>
-    <div id="video-container">
-      <video id="video" controls controlsList="nodownload">
-        <source src="files/inv.mp4" type="video/mp4">
-      </video>
+      <div id="video-container">
+        <video id="video" src="files/inv.mp4" controls controlsList="nodownload" disablePictureInPicture></video>
+    </div>
+    <div id="button-container">
+        <div id="play-button" class="button">
+            <i class="fas fa-play"></i>
+        </div>
+        <div id="pause-button" class="button">
+            <i class="fas fa-pause"></i>
+        </div>
     </div>
 
     <div id="button-container">
